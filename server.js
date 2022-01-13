@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors({ origin: true, credentials: true }))
 
 //DB config
-mongoose.connect(process.env.MONGOURI,{
+mongoose.connect(process.env.MONGODB_URI,{
     useNewUrlParser:true
 }).then(()=>console.log("database connected successfully"))
 .catch(()=>console.log("database not connected"))
