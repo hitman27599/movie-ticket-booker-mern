@@ -78,7 +78,7 @@ const AddMovies = () => {
             }
         })
         console.log(seat1);
-        Axios.post("http://localhost:8000/api/movies",{
+        Axios.post("https://movie-ticket-booker-mern.herokuapp.com/api/movies",{
             name:data.name,
             date:data.date,
             time:data.time,

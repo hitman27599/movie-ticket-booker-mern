@@ -14,7 +14,7 @@ const Movies = ({setPrice,setMovie,setSelectedSeats}) => {
     }
 
     const onClickSearch = () => {
-        Axios.post("http://localhost:8000/api/movies/search",{name:search})
+        Axios.post("https://movie-ticket-booker-mern.herokuapp.com/api/movies/search",{name:search})
             .then((data)=>{
                 console.log(data);
                 if(data.data){
@@ -41,7 +41,7 @@ const Movies = ({setPrice,setMovie,setSelectedSeats}) => {
     },[])
 
     const loadMovies = () => {
-        Axios.get("http://localhost:8000/api/movies")
+        Axios.get("https://movie-ticket-booker-mern.herokuapp.com/api/movies")
             .then((data)=>{
                 console.log(data.data);
                 setMovies(data.data);

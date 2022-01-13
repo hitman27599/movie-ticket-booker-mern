@@ -40,7 +40,7 @@ const Payment = ({movie,setMovie,selectedSeats,price}) => {
             })
         }
         setMovie(movie);
-        Axios.put(`http://localhost:8000/api/movies/${movie._id}`,{
+        Axios.put(`https://movie-ticket-booker-mern.herokuapp.com/api/movies/${movie._id}`,{
             seats: movie.seats,
         })
             .then((data)=>{
