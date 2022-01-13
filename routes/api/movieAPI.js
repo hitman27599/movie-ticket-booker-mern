@@ -51,7 +51,7 @@ router.post('/search',(req,res)=>{
     const expression = `/${name}/i`;
     console.log(expression);
     var query = {name :{$regex: name,$options : 'i'}}
-    Movie.findOne(query,(err,movie)=>{
+    Movie.find(query,(err,movie)=>{
         if(err){
             res.status(500).send(err)
         }

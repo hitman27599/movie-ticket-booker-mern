@@ -88,7 +88,7 @@ const AddMovies = () => {
         .then((data)=>{
             console.log(data);
             alert("movie added");
-            navigate('/home');
+            navigate('/');
         })
         .catch((err)=>{
             console.log(err);
