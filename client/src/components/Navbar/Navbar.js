@@ -21,7 +21,7 @@ const Navbar = () => {
                         Boooker
                     </Typography>
                     <div className="navbar-links">
-                        <Link className="Navbar-link" to="/home">
+                        <Link className="Navbar-link" to="/">
                             <Typography variant="h6" >Home</Typography>    
                         </Link>
                         <Link className="Navbar-link" to="/addmovies">

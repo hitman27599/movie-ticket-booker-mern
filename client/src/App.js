@@ -20,7 +20,7 @@ const App = () => {
         <Router>
             <Navbar />
             <Routes>
-                <Route path="/home" element={<Movies
+                <Route path="/" element={<Movies
                                                 setPrice={setPrice}
                                                 setMovie={setMovie}
                                                 setSelectedSeats={setSelectedSeats} 
