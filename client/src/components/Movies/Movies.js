@@ -14,7 +14,7 @@ const Movies = ({setPrice,setMovie,setSelectedSeats}) => {
     }
 
     const onClickSearch = () => {
-        Axios.post("https://movie-ticket-booker-mern.herokuapp.com/api/movies/search",{name:search})
+        Axios.post("/api/movies/search",{name:search})
             .then((data)=>{
                 console.log(data);
                 if(data.data){
