@@ -1,0 +1,35 @@
+.seatArrangement {
+  margin-top: 50px;
+}
+.seatArrangement-container {
+  margin: auto;
+  display: flex;
+}
+.seatArrangement-container-left {
+  flex: 40%;
+}
+.seatArrangement-container-right {
+  flex: 40%;
+}
+.seatArrangement-seatTitle {
+  text-align: center;
+}
+.seatArrangement-gird {
+}
+.seatLeft {
+}
+.seatRight {
+}
+.spacing {
+  width: 50px;
+}
+.seatAraangement-buttondiv {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.total {
+  padding-right: 50px;
+}
+.seat {
+}

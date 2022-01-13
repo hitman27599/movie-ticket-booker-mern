@@ -1,0 +1,10 @@
+.movie-card {
+  width: 250px;
+  height: 500px;
+}
+.movie-card-media {
+  height: 300px;
+}
+.movie-card-content {
+  height: 100px;
+}

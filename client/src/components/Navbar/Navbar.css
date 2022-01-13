@@ -1,0 +1,14 @@
+.navbar-logo {
+  flex-grow: 1;
+}
+.navbar-grow {
+  flex-grow: 3;
+}
+.navbar-links {
+  display: flex;
+}
+.Navbar-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: unset;
+}

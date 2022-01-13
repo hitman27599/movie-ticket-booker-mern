@@ -1,0 +1,12 @@
+.movies-contaiiner {
+  margin: 30px;
+}
+.searchbar {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  /* height: 100px; */
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}

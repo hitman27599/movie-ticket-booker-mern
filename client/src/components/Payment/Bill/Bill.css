@@ -1,0 +1,30 @@
+.bill {
+  margin: 50px;
+}
+.card {
+  height: 300px;
+  display: flex;
+}
+.cardmedia {
+  height: 300px;
+  width: 200px;
+  flex-shrink: 0;
+}
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+}
+.seatnumber {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.total {
+  margin-top: auto;
+  padding-top: 10px;
+}
+.buttonsection {
+  text-align: center;
+  margin: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,19 @@
+.container {
+  margin: auto;
+  width: 50%;
+  margin-top: 100px;
+}
+.heading {
+  text-align: center;
+}
+.form-container {
+  padding: 50px;
+}
+.formbutton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.formbutton {
+  margin-top: 50px;
+}
