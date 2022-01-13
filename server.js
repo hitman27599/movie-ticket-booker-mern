@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
+const path = require('path');
 
 const movieRoutes = require('./routes/api/movieAPI');
 
@@ -24,5 +25,13 @@ mongoose.connect(process.env.MONGOURI,{
 
 //api routes
 app.use('/api/movies',movieRoutes);
+
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+
+    app.get('*',(req,res)=>{
+        res.sendFile(path.join(__dirname,'client','build','index.html'));
+    });
+}
 
 app.listen(port,(req,res)=>console.log(`app running on ${port}`));
