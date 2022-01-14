@@ -41,7 +41,7 @@ const Movies = ({setPrice,setMovie,setSelectedSeats}) => {
     },[])
 
     const loadMovies = () => {
-        Axios.get("https://movie-ticket-booker-mern.herokuapp.com/api/movies")
+        Axios.get("/api/movies")
             .then((data)=>{
                 console.log(data.data);
                 setMovies(data.data);
